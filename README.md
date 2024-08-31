@@ -4,9 +4,7 @@
 
 ### Server Machine
 
-1. Download the code zip file and extract it.
-
-2. SERVER  {folder}
+1. SERVER  {folder}
      - smtpmail.c
      - popserver.c
      - user.txt
@@ -22,7 +20,7 @@
          ├── user3
          └── ...
          ```     
-3. Compile the SMTP server:
+2. Compile the SMTP server:
 
     ```bash
     cd path/to/server/folder
@@ -35,7 +33,7 @@
     ./smtp <smtp_port>
     ```
 
-4. In another terminal, compile the POP3 server:
+3. In another terminal, compile the POP3 server:
 
     ```bash
     cd path/to/server/folder
@@ -48,16 +46,14 @@
     ./pop3 <pop3_port>
     ```
 
-5. Ensure that both SMTP and POP3 servers are running.
+4. Ensure that both SMTP and POP3 servers are running.
 
 ### Client Machine
 
-1. Download the code zip file and extract it.
-
-2. CLIENT  {folder}
+1. CLIENT  {folder}
    - mailclient.c
 
-4. Compile the mail client:
+2. Compile the mail client:
 
     ```bash
     cd path/to/client/folder
@@ -70,9 +66,9 @@
     ./client <server_IP> <smtp_port> <pop3_port>
     ```
 
-5. The client will prompt for a username and password. Enter the login details.
+3. The client will prompt for a username and password. Enter the login details.
 
-6. The client will show three options:
+4. The client will show three options:
    - 1. Manage Mail
    - 2. Send Mail
    - 3. Quit
